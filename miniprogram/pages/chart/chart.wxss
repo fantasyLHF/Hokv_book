@@ -1,0 +1,64 @@
+/* miniprogram/pages/chart/chart.wxss */
+@import "./chart.skeleton.wxss";
+
+.chart {}
+
+.nav {
+  height: 100rpx;
+  background-color: #1296db;
+  padding: 20rpx;
+  display: flex;
+  box-sizing: border-box;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.search-date {
+  background-color: #fff;
+  flex: 1;
+  border-radius: 30rpx;
+}
+
+.search-date picker {
+  text-indent: 30rpx;
+  color: #aaa;
+}
+
+.search-type {
+  border-radius: 10rpx;
+  width: 160rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  text-align: center;
+  color: #aaa;
+}
+
+.class {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  font-size: 28rpx;
+  padding: 10rpx 0;
+  font-weight: bold;
+}
+
+.get {
+  flex: 1;
+}
+
+.pay {
+  flex: 1;
+}
+
+
+
+.container {
+  margin: 20rpx 0;
+  height: 750rpx;
+  background-color: #fff;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

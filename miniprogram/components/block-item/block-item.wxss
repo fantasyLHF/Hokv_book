@@ -1,0 +1,26 @@
+/* components/block-item/block-item.wxss */
+.block {
+  background-color: #fff;
+  display: flex;
+  padding: 30rpx 20rpx;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.name {
+  flex: 1;
+  color: #999;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+}
+
+.icon {
+  padding: 0 10rpx;
+  width: 40rpx;
+}
+
+.icon image {
+  vertical-align: middle;
+  width: 40rpx;
+}

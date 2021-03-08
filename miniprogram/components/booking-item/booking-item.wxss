@@ -1,0 +1,69 @@
+.booking-item {
+  height: 140rpx;
+  background-color: #fff;
+  margin-bottom: 16rpx;
+  display: flex;
+  padding: 0 20rpx;
+  align-items: center;
+}
+
+.img {
+  width: 100rpx;
+}
+
+.img image {
+  width: 80rpx;
+}
+
+.content {
+  flex: auto;
+}
+
+.c-top {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.t-name {
+  font-weight: bold;
+
+}
+
+.t-pay {
+  background-color: rgba(54, 230, 148, .2);
+  font-size: 24rpx;
+  margin: 0 20rpx;
+  padding: 6rpx 20rpx;
+  border-radius: 40rpx;
+  color: #fff;
+}
+
+.t-time {
+  font-size: 24rpx;
+  color: #aeaeae;
+}
+
+.c-bot {
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+.money {
+  width: 180rpx;
+  font-weight: bold;
+  color: #e4393c;
+  text-align: right;
+}
+
+.delete {
+  margin-left: 10rpx;
+  width: 50rpx;
+}
+
+.delete:active {
+  opacity: 0.8;
+}
+
+.delete image {
+  width: 40rpx;
+}

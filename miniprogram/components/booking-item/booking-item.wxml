@@ -1,0 +1,18 @@
+<view class="booking-item">
+  <view class="img">
+    <image src="{{bookData.type.icon}}" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="c-top">
+      <text class="t-name">{{bookData.type.name}}</text>
+      <text class="t-pay"
+        style="background-color:{{bookData.payType=='微信'?'#00B26A':bookData.payType=='现金'?'#e4393c':bookData.payType=='支付宝'?'rgb(68, 143, 241)':bookData.payType=='信用卡'?'rgb(212, 212, 12)':'rgb(202, 12, 202)'}}">{{bookData.payType}}</text>
+      <text class="t-time">{{bookData.date}}</text>
+    </view>
+    <view class="c-bot">{{bookData.detail}}</view>
+  </view>
+  <view class="money" style="{{bookData.moneyType=='支出'?'color:#e4393c':'color:#00B26A'}}">￥{{bookData.money}}</view>
+  <view class="delete" wx:if="{{isDelete}}" bindtap="deleteIt" data-id="{{bookData._id}}">
+    <image src="../../images/delete.png" mode="widthFix"></image>
+  </view>
+</view>

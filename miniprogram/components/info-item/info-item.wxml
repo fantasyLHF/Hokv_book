@@ -1,0 +1,26 @@
+<!--components/info-item/info-item.wxml-->
+<view class="box">
+  <view class="img">
+    <image mode="widthFix" src="../../images/trip.png"></image>
+  </view>
+  <view class="content">
+    <view class="top">
+      <view class="name">
+        学习
+      </view>
+      <view class="money">
+        600
+      </view>
+    </view>
+    <view class="bot">
+      <view class="press">
+        <view class="press-box"></view>
+        <view class="press-slide"></view>
+      </view>
+      <view class="count">2笔</view>
+    </view>
+  </view>
+  <view class="icon">
+    <image mode="widthFix" src="../../images/rightarrow.png"></image>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+/* miniprogram/pages/my/my.wxss */
+.bg {
+  background-color: #1296db;
+  padding: 60rpx;
+  color: #fff;
+  display: flex;
+  height: 140rpx;
+  /* border-bottom: 1rpx dashed #fff; */
+}
+
+.img {
+  width: 140rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.content {
+  padding: 0 20rpx;
+  flex: 1;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.intro {
+  margin-top: 20rpx;
+}

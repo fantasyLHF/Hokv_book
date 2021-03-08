@@ -1,0 +1,45 @@
+<!--miniprogram/pages/home/home.wxml-->
+<import src="home.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="home" wx:else>
+  <!-- 头部 -->
+  <view class="home-bg">
+    <view class="content">
+      <view class="home-title">本月结余</view>
+      <view class="home-money"><text class="big">{{monthAll}}.</text>{{monthAllF}}</view>
+      <view class="sum">
+        <view class="money-tip">本月收入<text class="Int"> {{monthGet}}.</text>
+          <text class="float">{{monthGetF}}</text>
+        </view>
+        <view>|</view>
+        <view class="money-tip r">本月支出 <text class="Int"> {{monthPay}}.</text>
+          <text class="float">{{monthPayF}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择本月的某一天 -->
+  <view class="nav">
+    <view class="nav-l">
+      <text class="nav-date">{{date}}</text>
+      <text class="nav-count">{{count}}笔</text>
+      <text class="nav-in">收入:￥{{get}}</text>
+      <text class="nav-out">支出: ￥{{pay}}</text>
+    </view>
+    <view class="nav-r">
+      <picker mode="date" class="date-select" start="2010-01-01" end="{{currentTime}}" bindchange="changeTime">时间选择
+      </picker>
+      <view class="pointer"></view>
+      <view class="pointer"></view>
+      <view class="pointer"></view>
+    </view>
+  </view>
+  <!-- 消费支出 -->
+  <view class="pcontent">
+    <booking-item wx:for="{{data}}" book-data="{{item}}" wx:key="index"></booking-item>
+    <view class="tips" wx:if="{{data.length==0}}">
+      <view>{{"<"}} --{{date}}未添加任何记账信息-- {{">"}}</view>
+      <view class="add" bindtouchend="goAdd">点击添加</view>
+    </view>
+  </view>
+</view>

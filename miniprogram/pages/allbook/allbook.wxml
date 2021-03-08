@@ -1,0 +1,6 @@
+<!--miniprogram/pages/allbook/allbook.wxml-->
+<view class="allbook">
+  <booking-item wx:for="{{data}}" book-data="{{item}}" wx:key="index" is-delete="true" bindremove="removeIt">
+  </booking-item>
+  <view class="tips" wx:if="{{data.length==0}}">没有任何记账信息！</view>
+</view>

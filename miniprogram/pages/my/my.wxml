@@ -1,0 +1,13 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="my">
+  <view class="bg">
+    <view class="img">
+    </view>
+    <view class="content">
+      <view class="name">幻想~</view>
+      <view class="intro">微信号：f13802441228</view>
+    </view>
+  </view>
+  <block-item bindtap="goto" data-path="../myMessage/myMessage" name="个人信息" icon="../../images/people.png"></block-item>
+  <block-item bindtap="goto" data-path="../allbook/allbook" name="我的记账" icon="../../images/mybook.png"></block-item>
+</view>

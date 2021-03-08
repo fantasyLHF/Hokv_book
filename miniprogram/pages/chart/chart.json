@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "图表",
+  "usingComponents": {
+    "ec-canvas": "../../components/ec-canvas/ec-canvas",
+    "info-item": "../../components/info-item/info-item"
+  }
+}

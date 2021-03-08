@@ -1,0 +1,45 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/8 下午12:05:38
+使用方法：
+在 D:\微信web开发者工具\workspace\hokvAccounting\miniprogram\pages\chart\chart.wxml 引入模板
+
+```
+<import src="chart.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\微信web开发者工具\workspace\hokvAccounting\miniprogram\pages\chart\chart.wxss 中引入样式
+```
+@import "./chart.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="chart">
+      <view class="nav">
+        <view class="search-date">
+          <view mode="date" class="sk-transparent sk-text-26-6667-455 sk-text sk-image">请选择日期</view>
+        </view>
+        <view class="search-type sk-transparent sk-text-26-6667-429 sk-text" style="background-position-x: 50%;">按年查询</view>
+      </view>
+      <view class="class">
+        <view class="get">
+          <view class="title sk-transparent sk-text-14-2857-623 sk-text" style="background-position-x: 50%;">收入</view>
+          <view class="money sk-transparent sk-text-14-2857-932 sk-text" style="background-position-x: 50%;">3000.00</view>
+        </view>
+        <view class="pay">
+          <view class="title sk-transparent sk-text-14-2857-9 sk-text" style="background-position-x: 50%;">支出</view>
+          <view class="money sk-transparent sk-text-14-2857-767 sk-text" style="background-position-x: 50%;">2888.22</view>
+        </view>
+      </view>
+      <view class="container">
+        <view class="tips"></view>
+        <view is="components/ec-canvas/ec-canvas" id="mychart-dom-bar">
+          <view bindtouchend="touchEnd" bindtouchmove="touchMove" bindtouchstart="touchStart" canvas-id="mychart-bar" class="canvas--ec-canvas sk-transparent sk-text-14-2857-593 sk-text sk-image" type="2d">绘图区域</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

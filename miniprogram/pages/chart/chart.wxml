@@ -1,0 +1,27 @@
+<!--miniprogram/pages/chart/chart.wxml-->
+<import src="chart.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="chart" wx:else>
+  <view class="nav">
+    <view class="search-date">
+      <picker mode="date" bindchange="choiceDate">{{date}}</picker>
+    </view>
+    <view class="search-type" bindtap="changeType">{{type[index]}}</view>
+  </view>
+  <view class="class">
+    <view class="get">
+      <view class="title">收入</view>
+      <view class="money">3000.00</view>
+    </view>
+    <view class="pay">
+      <view class="title">支出</view>
+      <view class="money">2888.22</view>
+    </view>
+  </view>
+  <view class="container">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <view class="box">
+    <info-item></info-item>
+  </view>
+</view>

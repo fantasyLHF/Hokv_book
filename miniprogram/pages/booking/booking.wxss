@@ -1,0 +1,163 @@
+/* miniprogram/pages/booking/booking.wxss */
+@import "./booking.skeleton.wxss";
+
+.bg {
+  height: 200rpx;
+  background-color: #1296db;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 96%;
+  margin: -140rpx auto;
+}
+
+.money-type {
+  border-radius: 20rpx;
+  background-color: #fff;
+  padding: 30rpx 20rpx 6rpx;
+}
+
+.title {
+  width: 240rpx;
+  border: 1px solid #1296db;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+
+.item {
+  padding: 10rpx 10rpx;
+  flex: auto;
+  text-align: center;
+
+}
+
+.booking .select-active {
+  background-color: #1296db;
+  color: #fff;
+}
+
+.classify {
+  margin-top: 40rpx;
+}
+
+.s-box {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.swiper {
+  height: 360rpx;
+
+}
+
+
+.s-item {
+  height: 160rpx;
+  width: 20%;
+  text-align: center;
+}
+
+.s-item image {
+  width: 60%;
+}
+
+.classify-active.s-item .s-name {
+  color: #1296db;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.classify-active.s-item image {
+  border-radius: 50%;
+  border: 8rpx solid #1296db;
+}
+
+.s-item .s-name {
+  font-weight: normal;
+  font-size: 24rpx;
+}
+
+.pay-type {
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 20rpx;
+}
+
+.pay-title {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 16rpx;
+  font-size: 24rpx;
+}
+
+.class-type {
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+
+.type-item {
+  flex: auto;
+}
+
+.pay-item {
+  text-align: center;
+  background-color: #eee;
+  width: 80%;
+  padding: 8rpx 0;
+  border-radius: 40rpx;
+  color: #666;
+  margin: 0 auto;
+}
+
+.pay-item.active {
+  background-color: #1296db;
+  color: #fff;
+}
+
+.detail {
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 20rpx;
+}
+
+.detail .detail-item {
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  align-items: center;
+}
+
+.detail-item text {
+  width: 120rpx;
+  text-align: center;
+}
+
+.detail-item view {
+  flex: auto;
+
+}
+
+.detail-picker {
+  color: rgb(128, 128, 128);
+}
+
+.btn {
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 20rpx;
+  text-align: center;
+  background-color: #1296db;
+  color: #fff;
+}
+
+.btn:active {
+  opacity: 0.8;
+}

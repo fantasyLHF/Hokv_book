@@ -1,0 +1,129 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/4 上午9:41:37
+使用方法：
+在 D:\微信web开发者工具\workspace\hokvAccounting\miniprogram\pages\booking\booking.wxml 引入模板
+
+```
+<import src="booking.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\微信web开发者工具\workspace\hokvAccounting\miniprogram\pages\booking\booking.wxss 中引入样式
+```
+@import "./booking.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="booking">
+      <view class="bg"></view>
+      <view class="box">
+        <view class="money-type">
+          <view class="title" style="border: none;">
+            <view class="item sk-transparent sk-text-14-2857-578 sk-text" data-index="0" style="background-position-x: 50%;">
+              收入</view>
+            <view class="item select-active sk-transparent sk-text-14-2857-609 sk-text" data-index="1" style="background-position-x: 50%;">
+              支出</view>
+          </view>
+          <view class="classify">
+            <swiper circular="true" class="swiper" indicator-active-color="#1296db" indicator-dots="true" current="0" autoplay="false">
+              <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+                <view class="s-box">
+                  <view class="s-item" data-typename="cy">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-351 sk-text" style="background-position-x: 50%;">餐饮</view>
+                  </view>
+                  <view class="s-item" data-typename="xq">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-96 sk-text" style="background-position-x: 50%;">人情</view>
+                  </view>
+                  <view class="s-item" data-typename="cx">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-436 sk-text" style="background-position-x: 50%;">出行</view>
+                  </view>
+                  <view class="s-item" data-typename="jk">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-348 sk-text" style="background-position-x: 50%;">健康</view>
+                  </view>
+                  <view class="s-item" data-typename="yl">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-223 sk-text" style="background-position-x: 50%;">娱乐</view>
+                  </view>
+                  <view class="s-item" data-typename="zf">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-372 sk-text" style="background-position-x: 50%;">住房</view>
+                  </view>
+                  <view class="s-item" data-typename="gw">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-908 sk-text" style="background-position-x: 50%;">购物</view>
+                  </view>
+                  <view class="s-item" data-typename="xx">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-170 sk-text" style="background-position-x: 50%;">学习</view>
+                  </view>
+                  <view class="s-item" data-typename="gz">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-613 sk-text" style="background-position-x: 50%;">工作</view>
+                  </view>
+                  <view class="s-item" data-typename="tz">
+                    <image mode="widthFix" style="height: 40px;" class="sk-image"></image>
+                    <view class="s-name sk-transparent sk-text-14-2857-120 sk-text" style="background-position-x: 50%;">投资</view>
+                  </view>
+                </view>
+              </swiper-item>
+            </swiper>
+          </view>
+        </view>
+        <view class="pay-type">
+          <view class="pay-title sk-transparent sk-text-14-2857-128 sk-text" style="border: none;">账户选择</view>
+          <view class="class-type">
+            <view class="type-item">
+              <view class="pay-item active sk-transparent sk-text-14-2857-92 sk-text" data-index="0" style="background-position-x: 50%;">
+                微信</view>
+            </view>
+            <view class="type-item">
+              <view class="pay-item sk-transparent sk-text-14-2857-566 sk-text" data-index="1" style="background-position-x: 50%;">
+                现金</view>
+            </view>
+            <view class="type-item">
+              <view class="pay-item sk-transparent sk-text-14-2857-627 sk-text" data-index="2" style="background-position-x: 50%;">
+                支付宝</view>
+            </view>
+            <view class="type-item">
+              <view class="pay-item sk-transparent sk-text-14-2857-594 sk-text" data-index="3" style="background-position-x: 50%;">
+                信用卡</view>
+            </view>
+            <view class="type-item">
+              <view class="pay-item sk-transparent sk-text-14-2857-588 sk-text" data-index="4" style="background-position-x: 50%;">
+                储蓄卡</view>
+            </view>
+          </view>
+        </view>
+        <view class="detail">
+          <view class="detail-item">
+            <text class="sk-transparent sk-text-30-0000-842 sk-text" style="background-position-x: 50%;">日期</text>
+            <view>
+              <view class="detail-picker sk-transparent sk-text-30-0000-486 sk-text sk-image" end="2021-3-4" mode="date" start="2010-01-01">
+                请选择日期</view>
+            </view>
+          </view>
+          <view class="detail-item">
+            <text class="sk-transparent sk-text-30-0000-547 sk-text" style="background-position-x: 50%;">金额</text>
+            <view class="itemView">
+              <view placeholder="请输入金额" type="digit" class="sk-image"></view>
+            </view>
+          </view>
+          <view class="detail-item">
+            <text class="sk-transparent sk-text-30-0000-200 sk-text" style="background-position-x: 50%;">备注</text>
+            <view class="itemView">
+              <view placeholder="请输入备注信息" type="text" class="sk-image"></view>
+            </view>
+          </view>
+        </view>
+        <view class="btn sk-transparent sk-text-14-2857-59 sk-text" style="background-position-x: 50%;">保存</view>
+      </view>
+    </view>
+  </view>
+</template>

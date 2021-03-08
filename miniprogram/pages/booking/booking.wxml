@@ -1,0 +1,62 @@
+<!--miniprogram/pages/booking/booking.wxml-->
+<import src="booking.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="booking" wx:else>
+  <view class="bg"></view>
+  <view class="box">
+    <view class="money-type">
+      <view class="title">
+        <view bindtap="changeSelect" wx:key="index" class="item {{index===activeIndex?'select-active':''}}"
+          wx:for="{{title}}" data-index="{{index}}">
+          {{item.name}}</view>
+      </view>
+      <view class="classify">
+        <swiper class="swiper" indicator-dots="{{true}}" indicator-active-color="#1296db" circular="{{true}}">
+          <swiper-item wx:for="{{type}}" wx:key="index">
+            <view class="s-box">
+              <view bindtap="changeType" data-typename="{{v.type}}"
+                class="s-item {{typeName==v.type?'classify-active':''}}" wx:for="{{item}}" wx:for-item="v"
+                wx:for-index="i" wx:key="i">
+                <image mode="widthFix" src="{{v.icon}}"></image>
+                <view class="s-name">{{v.name}}</view>
+              </view>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="pay-type">
+      <view class="pay-title">账户选择</view>
+      <view class="class-type">
+        <view class="type-item" wx:for="{{payType}}" wx:key="index">
+          <view bindtap="changePayType" data-index="{{index}}" class="pay-item {{index==payTypeIndex?'active':''}}">
+            {{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="detail">
+      <view class="detail-item">
+        <text>日期</text>
+        <view>
+          <picker start="2010-01-01" bindchange="selectDate" end="{{currentTime}}" class="detail-picker" mode="date">
+            {{date}}</picker>
+        </view>
+
+      </view>
+      <view class="detail-item">
+        <text>金额</text>
+        <view class="itemView">
+          <input bindblur="changeMoney" type="digit" value="{{money}}" placeholder="请输入金额" />
+        </view>
+      </view>
+      <view class="detail-item">
+        <text>备注</text>
+        <view class="itemView">
+          <input bindblur="changeDetail" type="text" value="{{detail}}" placeholder="请输入备注信息" />
+        </view>
+      </view>
+
+    </view>
+    <view class="btn" bindtouchend="save">保存</view>
+  </view>
+</view>
